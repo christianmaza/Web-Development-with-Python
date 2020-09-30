@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+Names
+{% endblock %}
+
+{% block body %}
+<ul>
+    {% for name in names %}
+    <li>
+        <h3>{{ name }}</h3>
+    </li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('index') }}">Index Page</a>
+{% endblock %}

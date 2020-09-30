@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+Is it New Years?
+{% endblock %}
+
+{% block body %}
+{% if newYear %}
+<h2> Yes, Happy New Years :)</h2>
+{% else %}
+<h2>Sorry it's not New Years :(</h2>
+{% endif %}
+
+<a href="{{ url_for('loopsExample') }}">Loops Page</a>
+{% endblock %}
